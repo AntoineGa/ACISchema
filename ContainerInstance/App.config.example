@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <add key="resourceGroup" value="YOUR_RESOURCE_GROUP"/>
+    <add key="containerGroup" value="CONTAINER_GROUP"/>
+    <add key="subsctiptionId" value="YOUR_SUBSCRIPTION_ID"/>
+    <add key="clientId" value="YOUR_APPLICATION_ID_SERVICE_PRINCIPAL"/>
+    <add key="clientSecret" value="YOUR_SECRET_OF_SERVICE_PRINCIPAL"/>
+    <add key="tenantId" value ="YOUR_TENANT_ID"/>
+
+    <add key="shareName" value="NAME_OF_THE_FILE_SHARE"></add>
+    <add key="shareAccountName" value="NAME_OF_STORAGE_ACCOUNT"></add>
+    <add key="shareAccountKey" value="VALUE_OF_STORAGE_KEY"></add>
+
+    <add key="dbPassword" value="VALUE_OF_USER_PASSWORD_FOR_DB"></add>
+    <add key="dbHost" value="FULL_VALUE_OF_SERVER_NAME_XYZ.database.windows.net"></add>
+    <add key="dbUser" value="VALUE_OF_USER_FOR_DB_WITH_@HOST_User@XYZ"></add>
+    <add key="dbName" value="NAME_OF_DATABASE"></add>
+    
+    <add key="dbSchema" value="SCHEMA_TO_BE_ANALYZED_.*DBNAME.*DBO.*"></add>
+    <add key="outputFileName" value="NAME_OF_THE_OUTPUT_FILE"></add>
+  </appSettings>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.6.1" />
+    </startup>
+</configuration>
