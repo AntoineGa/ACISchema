@@ -20,7 +20,7 @@ namespace ContainerInstance
         {
             var credentials = SdkContext.AzureCredentialsFactory.FromServicePrincipal(clientId, clientSecret, tenantId, AzureEnvironment.AzureGlobalCloud);
             var client = new ContainerInstanceManagementClient(credentials);
-            client.SubscriptionId = subsctiptionId;
+            client.SubscriptionId = subscriptionId;
 
             var locations = new string[] { "EastUS", "WestUS", "WestEurope" }; // Currently available only three regions. 
 
@@ -115,7 +115,7 @@ namespace ContainerInstance
 
         private static string resourceGroup = ConfigurationManager.AppSettings.Get("resourceGroup");
         private static string containerGroup = ConfigurationManager.AppSettings.Get("containerGroup");
-        private static string subsctiptionId = ConfigurationManager.AppSettings.Get("subsctiptionId");
+        private static string subscriptionId = ConfigurationManager.AppSettings.Get("subscriptionId");
         private static string clientId = ConfigurationManager.AppSettings.Get("clientId");
         private static string clientSecret = ConfigurationManager.AppSettings.Get("clientSecret");
         private static string tenantId = ConfigurationManager.AppSettings.Get("tenantId");
